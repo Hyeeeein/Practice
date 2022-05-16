@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .gnb{width: 1000px; 
+            margin: 50px auto;
+        }
+        .gnb .depth1{
+            float: left; 
+            width: 200px;
+            text-align: center;
+        }
+        .gnb .depth1>a{
+            display: block;
+            font-size: 20px; 
+            font-weight: bold;
+            line-height: 50px;
+            background-color: #fff;
+            color: #000;
+        }
+        .gnb .depth1:hover>a{color: #4c4cc3;}
+
+        .gnb .depth2{
+            padding: 30px 0; 
+            background-color: #4c4cc3;
+            border: 1px solid #4c4cc3;
+            border-radius: 10%;
+            color: #ebebeb; font-size: 14px;
+            display: none;
+        }
+        .gnb .depth2>li{padding-bottom: 15px;}
+        .gnb .depth2>li:last-child{padding-bottom: 0;}
+        .gnb .depth2>li:hover{color: black;}
+        .gnb .depth1:hover>.depth2{display: block;}
+
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li class="depth1">
+            <a href="#">학교소개</a>
+            <ul class="depth2">
+                <li><a href="#">대학기구</a></li>
+                <li><a href="#">대학현황</a></li>
+                <li><a href="#">캠퍼스 안내</a></li>
+                <li><a href="#">홍보갤러리</a></li>
+            </ul>
+        </li>
+        <li class="depth1">
+             <a href="#">입시안내</a>
+             <ul class="depth2">
+                <li><a href="#">수시 모집요강</a></li>
+                <li><a href="#">정시 모집요강</a></li>
+                <li><a href="#">편입학 모집요강</a></li>
+                <li><a href="#">입시관련 묻고 답하기</a></li>
+                <li><a href="#">대학원 입학</a></li>
+             </ul>
+        </li>
+        <li class="depth1">
+            <a href="#">대학/대학원</a>
+            <ul class="depth2">
+                <li><a href="#">대학 안내</a></li>
+                <li><a href="#">대학원 안내</a></li>
+                <li><a href="#">평생교육원</a></li>
+             </ul>
+        </li>
+        <li class="depth1">
+            <a href="#">학사종합안내</a>
+            <ul class="depth2">
+                <li><a href="#">학사정보</a></li>
+                <li><a href="#">교수전용</a></li>
+                <li><a href="#">장학정보</a></li>
+                <li><a href="#">학자금대출</a></li>
+                <li><a href="#">등록</a></li>
+            </ul>
+        </li>
+        <li class="depth1">
+            <a href="#">취업정보</a>
+            <ul class="depth2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">취업진로지원처</a></li>
+                <li><a href="#">구인·구직정보</a></li>
+                <li><a href="#">채용 정보 사이트</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
