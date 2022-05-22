@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*초기화*/
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;}
+body{line-height: 1;}
+table{border-collapse: collapse;}
+
+.wrap{border: 2px solid rgb(223, 223, 223);width: 350px; margin: 50px auto;}
+
+.cf{padding: 15px 15px 0;}
+.list{float: left;width: 100px;height: 187px;text-align: center;word-break: keep-all;font-size: 12px;margin-right: 10px;}
+.list:nth-child(3n){margin-right: 0;}
+.list>a>.text{padding-top: 10px;line-height: 15px;}
+
+.cf::after{content: ""; width: 0;height: 0;display: block;clear: both;}
